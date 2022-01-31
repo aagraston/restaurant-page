@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+$roboto: "Roboto", sans-serif;
+
 body {
-  background-color: red;
+  font-family: $roboto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
 }

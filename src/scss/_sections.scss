@@ -1,0 +1,21 @@
+.header-bar {
+  background-color: $color-blue;
+  padding: $spacer-50;
+  color: $color-white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: $spacer-20;
+}
+
+.page-content {
+  color: $color-black;
+  margin: $spacer-20;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {}
