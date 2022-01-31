@@ -1,10 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { appendFile } = require('fs');
 
 module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: './src/index.js',
+  entry: [
+    './src/index.js',
+    './src/scss/app.scss'
+  ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -16,4 +20,16 @@ module.exports = {
       inject: true,
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        exclude: /node-modules/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'],
+      },
+    ],
+  },
 };
