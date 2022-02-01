@@ -116,9 +116,47 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ "./src/scss/app.scss");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/app.scss */ \"./src/scss/app.scss\");\n/* harmony import */ var _js_homepage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/homepage */ \"./src/js/homepage.js\");\n/* harmony import */ var _js_headerbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/headerbar */ \"./src/js/headerbar.js\");\n\n\n\n\nlet contentDiv = document.querySelector('#content');\n\ncontentDiv.innerHTML = '';\n\nlet headerbar = new _js_headerbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nlet headerbarDiv = headerbar.getHeaderBar();\n\nlet homepage = new _js_homepage__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nlet homepagDiv = homepage.getHomepage();\n\ncontentDiv.appendChild(headerbarDiv);\ncontentDiv.appendChild(homepagDiv);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUF3QjtBQUNZO0FBQ0U7O0FBRXRDOztBQUVBOztBQUVBLG9CQUFvQixxREFBUztBQUM3Qjs7QUFFQSxtQkFBbUIsb0RBQVE7QUFDM0I7O0FBRUE7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RhdXJhbnQtcGFnZS8uL3NyYy9pbmRleC5qcz9iNjM1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9zY3NzL2FwcC5zY3NzJ1xuaW1wb3J0IEhvbWVwYWdlIGZyb20gJy4vanMvaG9tZXBhZ2UnXG5pbXBvcnQgSGVhZGVyYmFyIGZyb20gJy4vanMvaGVhZGVyYmFyJ1xuXG5sZXQgY29udGVudERpdiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyNjb250ZW50Jyk7XG5cbmNvbnRlbnREaXYuaW5uZXJIVE1MID0gJyc7XG5cbmxldCBoZWFkZXJiYXIgPSBuZXcgSGVhZGVyYmFyKCk7XG5sZXQgaGVhZGVyYmFyRGl2ID0gaGVhZGVyYmFyLmdldEhlYWRlckJhcigpO1xuXG5sZXQgaG9tZXBhZ2UgPSBuZXcgSG9tZXBhZ2UoKTtcbmxldCBob21lcGFnRGl2ID0gaG9tZXBhZ2UuZ2V0SG9tZXBhZ2UoKTtcblxuY29udGVudERpdi5hcHBlbmRDaGlsZChoZWFkZXJiYXJEaXYpO1xuY29udGVudERpdi5hcHBlbmRDaGlsZChob21lcGFnRGl2KTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
+/***/ }),
+
+/***/ "./src/js/headerbar.js":
+/*!*****************************!*\
+  !*** ./src/js/headerbar.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ headerbar)\n/* harmony export */ });\n/* harmony import */ var _images_Asset_2_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/Asset 2.svg */ \"./src/images/Asset 2.svg\");\n\n\nclass headerbar {\n\n  getHeaderBar = _ => {\n    let retDiv = document.createElement('div');\n    retDiv.classList.add('header-bar');\n\n    //Image\n    \n    let logoImage = new Image(150);\n    logoImage.src = _images_Asset_2_svg__WEBPACK_IMPORTED_MODULE_0__;\n\n    //the header\n    let headerString = \"The Melting Pot\";\n    let header = document.createElement('h1');\n    header.innerText = headerString;\n\n    //Appending\n\n    retDiv.appendChild(logoImage);\n    retDiv.appendChild(header);\n\n    return retDiv;\n  };\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvaGVhZGVyYmFyLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQXdDOztBQUV6Qjs7QUFFZjtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0Esb0JBQW9CLGdEQUFJOztBQUV4QjtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RhdXJhbnQtcGFnZS8uL3NyYy9qcy9oZWFkZXJiYXIuanM/YjdkYiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTG9nbyBmcm9tICcuLi9pbWFnZXMvQXNzZXQgMi5zdmcnXG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGhlYWRlcmJhciB7XG5cbiAgZ2V0SGVhZGVyQmFyID0gXyA9PiB7XG4gICAgbGV0IHJldERpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuICAgIHJldERpdi5jbGFzc0xpc3QuYWRkKCdoZWFkZXItYmFyJyk7XG5cbiAgICAvL0ltYWdlXG4gICAgXG4gICAgbGV0IGxvZ29JbWFnZSA9IG5ldyBJbWFnZSgxNTApO1xuICAgIGxvZ29JbWFnZS5zcmMgPSBMb2dvO1xuXG4gICAgLy90aGUgaGVhZGVyXG4gICAgbGV0IGhlYWRlclN0cmluZyA9IFwiVGhlIE1lbHRpbmcgUG90XCI7XG4gICAgbGV0IGhlYWRlciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gxJyk7XG4gICAgaGVhZGVyLmlubmVyVGV4dCA9IGhlYWRlclN0cmluZztcblxuICAgIC8vQXBwZW5kaW5nXG5cbiAgICByZXREaXYuYXBwZW5kQ2hpbGQobG9nb0ltYWdlKTtcbiAgICByZXREaXYuYXBwZW5kQ2hpbGQoaGVhZGVyKTtcblxuICAgIHJldHVybiByZXREaXY7XG4gIH07XG59Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/headerbar.js\n");
+
+/***/ }),
+
+/***/ "./src/js/homepage.js":
+/*!****************************!*\
+  !*** ./src/js/homepage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ homepage)\n/* harmony export */ });\n/* harmony import */ var _images_burger_banner_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/burger-banner.jpg */ \"./src/images/burger-banner.jpg\");\n\n\nclass homepage {\n\n  getHomepage = _ => {\n    let retDiv = document.createElement('div');\n    retDiv.classList.add('page-content');\n\n    //the header\n    let headerString = \"Welcome to our restaurant homepage!\";\n    let header = document.createElement('h2');\n    header.innerText = headerString;\n\n    //image bar\n    let burgerImage = new Image(900, 300);\n    burgerImage.src = _images_burger_banner_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n    //paragraphs\n    let p1String = \"Every dish we serve at The Melting Pot screams authenticity. Nothing will satisfy and delight like our many entrees from around the globe. We offer every dish from anywhere around the world guarenteed! There isn't a solitary plate made in a country of the known Earth that doesn't have some place on our menu. From the white-sand coasts of Greece, to the thick musty jungles of Costa Rica.\"\n\n    let p2String = \"So if you're from planet earth, come try the best of your native land! And if you leave here unsatisfied, or can't find a dish you'd like from a country you're fond of... we guarentee your money back, and a coupon for a free meal the next time you're in!\"\n\n    let p3String = \"Browse our website to understand how dedicated we are to serving up only the best.\"\n\n    let p1 = document.createElement('p');\n    let p2 = document.createElement('p');\n    let p3 = document.createElement('p');\n\n    p1.innerText = p1String;\n    p2.innerText = p2String;\n    p3.innerText = p3String;\n\n    let twoColumnDiv = document.createElement('div');\n    twoColumnDiv.classList.add('page-content-two-column');\n    twoColumnDiv.appendChild(p1);\n    twoColumnDiv.appendChild(p2);\n\n    retDiv.appendChild(header);\n    retDiv.appendChild(burgerImage);\n    retDiv.appendChild(twoColumnDiv);\n    retDiv.appendChild(p3);\n\n    return retDiv;\n  };\n\n\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvaG9tZXBhZ2UuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBZ0Q7O0FBRWpDOztBQUVmO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0Esc0JBQXNCLHNEQUFNOztBQUU1QjtBQUNBOztBQUVBOztBQUVBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTs7O0FBR0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50LXBhZ2UvLi9zcmMvanMvaG9tZXBhZ2UuanM/YzdmMSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgQnVyZ2VyIGZyb20gJy4uL2ltYWdlcy9idXJnZXItYmFubmVyLmpwZydcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgaG9tZXBhZ2Uge1xuXG4gIGdldEhvbWVwYWdlID0gXyA9PiB7XG4gICAgbGV0IHJldERpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuICAgIHJldERpdi5jbGFzc0xpc3QuYWRkKCdwYWdlLWNvbnRlbnQnKTtcblxuICAgIC8vdGhlIGhlYWRlclxuICAgIGxldCBoZWFkZXJTdHJpbmcgPSBcIldlbGNvbWUgdG8gb3VyIHJlc3RhdXJhbnQgaG9tZXBhZ2UhXCI7XG4gICAgbGV0IGhlYWRlciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gyJyk7XG4gICAgaGVhZGVyLmlubmVyVGV4dCA9IGhlYWRlclN0cmluZztcblxuICAgIC8vaW1hZ2UgYmFyXG4gICAgbGV0IGJ1cmdlckltYWdlID0gbmV3IEltYWdlKDkwMCwgMzAwKTtcbiAgICBidXJnZXJJbWFnZS5zcmMgPSBCdXJnZXI7XG5cbiAgICAvL3BhcmFncmFwaHNcbiAgICBsZXQgcDFTdHJpbmcgPSBcIkV2ZXJ5IGRpc2ggd2Ugc2VydmUgYXQgVGhlIE1lbHRpbmcgUG90IHNjcmVhbXMgYXV0aGVudGljaXR5LiBOb3RoaW5nIHdpbGwgc2F0aXNmeSBhbmQgZGVsaWdodCBsaWtlIG91ciBtYW55IGVudHJlZXMgZnJvbSBhcm91bmQgdGhlIGdsb2JlLiBXZSBvZmZlciBldmVyeSBkaXNoIGZyb20gYW55d2hlcmUgYXJvdW5kIHRoZSB3b3JsZCBndWFyZW50ZWVkISBUaGVyZSBpc24ndCBhIHNvbGl0YXJ5IHBsYXRlIG1hZGUgaW4gYSBjb3VudHJ5IG9mIHRoZSBrbm93biBFYXJ0aCB0aGF0IGRvZXNuJ3QgaGF2ZSBzb21lIHBsYWNlIG9uIG91ciBtZW51LiBGcm9tIHRoZSB3aGl0ZS1zYW5kIGNvYXN0cyBvZiBHcmVlY2UsIHRvIHRoZSB0aGljayBtdXN0eSBqdW5nbGVzIG9mIENvc3RhIFJpY2EuXCJcblxuICAgIGxldCBwMlN0cmluZyA9IFwiU28gaWYgeW91J3JlIGZyb20gcGxhbmV0IGVhcnRoLCBjb21lIHRyeSB0aGUgYmVzdCBvZiB5b3VyIG5hdGl2ZSBsYW5kISBBbmQgaWYgeW91IGxlYXZlIGhlcmUgdW5zYXRpc2ZpZWQsIG9yIGNhbid0IGZpbmQgYSBkaXNoIHlvdSdkIGxpa2UgZnJvbSBhIGNvdW50cnkgeW91J3JlIGZvbmQgb2YuLi4gd2UgZ3VhcmVudGVlIHlvdXIgbW9uZXkgYmFjaywgYW5kIGEgY291cG9uIGZvciBhIGZyZWUgbWVhbCB0aGUgbmV4dCB0aW1lIHlvdSdyZSBpbiFcIlxuXG4gICAgbGV0IHAzU3RyaW5nID0gXCJCcm93c2Ugb3VyIHdlYnNpdGUgdG8gdW5kZXJzdGFuZCBob3cgZGVkaWNhdGVkIHdlIGFyZSB0byBzZXJ2aW5nIHVwIG9ubHkgdGhlIGJlc3QuXCJcblxuICAgIGxldCBwMSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3AnKTtcbiAgICBsZXQgcDIgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdwJyk7XG4gICAgbGV0IHAzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncCcpO1xuXG4gICAgcDEuaW5uZXJUZXh0ID0gcDFTdHJpbmc7XG4gICAgcDIuaW5uZXJUZXh0ID0gcDJTdHJpbmc7XG4gICAgcDMuaW5uZXJUZXh0ID0gcDNTdHJpbmc7XG5cbiAgICBsZXQgdHdvQ29sdW1uRGl2ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7XG4gICAgdHdvQ29sdW1uRGl2LmNsYXNzTGlzdC5hZGQoJ3BhZ2UtY29udGVudC10d28tY29sdW1uJyk7XG4gICAgdHdvQ29sdW1uRGl2LmFwcGVuZENoaWxkKHAxKTtcbiAgICB0d29Db2x1bW5EaXYuYXBwZW5kQ2hpbGQocDIpO1xuXG4gICAgcmV0RGl2LmFwcGVuZENoaWxkKGhlYWRlcik7XG4gICAgcmV0RGl2LmFwcGVuZENoaWxkKGJ1cmdlckltYWdlKTtcbiAgICByZXREaXYuYXBwZW5kQ2hpbGQodHdvQ29sdW1uRGl2KTtcbiAgICByZXREaXYuYXBwZW5kQ2hpbGQocDMpO1xuXG4gICAgcmV0dXJuIHJldERpdjtcbiAgfTtcblxuXG59Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/homepage.js\n");
+
+/***/ }),
+
+/***/ "./src/images/Asset 2.svg":
+/*!********************************!*\
+  !*** ./src/images/Asset 2.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "ff152595577521e2af3a.svg";
+
+/***/ }),
+
+/***/ "./src/images/burger-banner.jpg":
+/*!**************************************!*\
+  !*** ./src/images/burger-banner.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "dd01a24269c23c05ff63.jpg";
 
 /***/ })
 
@@ -173,6 +211,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -187,6 +237,26 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
