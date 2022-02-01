@@ -29,6 +29,10 @@ module.exports = {
           'css-loader',
           'sass-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
 };
