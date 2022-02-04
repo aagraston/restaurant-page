@@ -8,7 +8,7 @@ export default class headerbar {
 
     //Image
     
-    let logoImage = new Image(150);
+    let logoImage = new Image(100);
     logoImage.src = Logo;
 
     //the header
