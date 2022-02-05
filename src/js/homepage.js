@@ -7,7 +7,7 @@ export default class homepage {
     retDiv.classList.add('page-content');
 
     //the header
-    let headerString = "Welcome to our restaurant homepage!";
+    let headerString = "Welcome to The Melting Pot!";
     let header = document.createElement('h2');
     header.innerText = headerString;
 
