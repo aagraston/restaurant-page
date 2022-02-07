@@ -3,6 +3,7 @@ import Homepage from './js/homepage'
 import Headerbar from './js/headerbar'
 import Navbar from './js/navbar'
 import Aboutpage from './js/aboutpage'
+import Contactpage from './js/contactpage'
 
 let contentDiv = document.querySelector('#content');
 
@@ -16,6 +17,9 @@ let homepagDiv = homepage.getHomepage();
 let aboutpage = new Aboutpage();
 let aboutpageDiv = aboutpage.getAboutpage();
 
+let contactpage = new Contactpage();
+let contactpageDiv = contactpage.getContactpage();
+
 let navBar = new Navbar();
 let navBarDiv = navBar.getNavBar();
 
@@ -23,9 +27,7 @@ let homeButton = navBarDiv.querySelector('#Home');
 let aboutButton = navBarDiv.querySelector('#About');
 let contactButton = navBarDiv.querySelector('#Contact');
 
-
-
-setPage('home');
+setPage('contact');
 
 //reset the content div
 function resetPage() {
@@ -53,7 +55,7 @@ function setPage(page) {
       break;
     
     case 'contact':
-      
+      contentDiv.appendChild(contactpageDiv);
       break;
   }
   
