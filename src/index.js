@@ -27,7 +27,13 @@ let homeButton = navBarDiv.querySelector('#Home');
 let aboutButton = navBarDiv.querySelector('#About');
 let contactButton = navBarDiv.querySelector('#Contact');
 
-setPage('contact');
+
+homeButton.addEventListener('click', setPage);
+aboutButton.addEventListener('click', setPage);
+contactButton.addEventListener('click', setPage);
+
+setHeaderAndNav();
+contentDiv.appendChild(homepagDiv);
 
 //reset the content div
 function resetPage() {
@@ -40,21 +46,21 @@ function setHeaderAndNav() {
   contentDiv.appendChild(navBarDiv);
 }
 
-function setPage(page) {
+function setPage(evt) {
   
   resetPage();
   setHeaderAndNav();
 
-  switch (page) {
-    case 'home':
+  switch (evt.currentTarget.getAttribute('id')) {
+    case 'Home':
       contentDiv.appendChild(homepagDiv);
       break;
   
-    case 'about':
+    case 'About':
       contentDiv.appendChild(aboutpageDiv);
       break;
     
-    case 'contact':
+    case 'Contact':
       contentDiv.appendChild(contactpageDiv);
       break;
   }
